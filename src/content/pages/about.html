@@ -1,7 +1,6 @@
 ---
 title: 'About | Code Stitch Web Designs'
 description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'about/'
 eleventyNavigation:
     key: About Us
@@ -12,6 +11,7 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl '/assets/images/cabinets2.jpg' | resize({ width: 720, height: 774 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}

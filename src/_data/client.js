@@ -1,6 +1,6 @@
 module.exports = {
-    "name": "Equanimous Edge Web Designs",
-    "email": "caseytokarchuk@gmail.com",
+    "name": "New Growth Web Services",
+    "email": "newgrowthweb@gmail.com",
     "phoneForTel": "613-857-9828",
     "phoneFormatted": "(613) 857-9828",
     "address": {
