@@ -25,3 +25,10 @@ eleventyNavigation:
         <img src="{% getUrl '/assets/images/hero.jpg' | resize({ width: 1500, height: 1475 }) | webp %}" alt="Produce collection">
     </picture>
 {% endblock %}
+
+TODO: 
+-Lazy load all images below the fold
+-Remove all references to code stitch
+- Ensure all images have alt description
+- Remove CMS capability, if not being used
+- Delete this text file
