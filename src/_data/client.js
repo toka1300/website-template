@@ -5,7 +5,6 @@ module.exports = {
     "phoneFormatted": "(613) 857-9828",
     "address": {
         "lineOne": "123 Fake Street",
-        "lineTwo": "What is this line for?",
         "city": "Ottawa",
         "state": "ON",
         "postalCode": "K0A1X0",
