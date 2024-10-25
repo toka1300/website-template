@@ -7,13 +7,10 @@
   #hero {
     z-index: 1;
     position: relative;
-    /* prevents overflow from the lines extending past the screen width */
     overflow: hidden;
-    /* changes on tablet */
     padding: 0 1rem;
     padding-bottom: 6.25rem;
     font-family: "Roboto", "Arial", sans-serif;
-    /* Centers button */
     text-align: center;
   }
   #hero .cs-picture {
@@ -23,7 +20,6 @@
     left: 0;
     display: block;
     height: 100%;
-    /* Background Image */
     width: 100%;
   }
   #hero .cs-picture img {
@@ -32,7 +28,6 @@
     left: 0;
     height: 100%;
     width: 100%;
-    /* Makes image act like a background-image */
     object-fit: cover;
   }
   #hero .cs-picture:before {
@@ -47,7 +42,6 @@
     background: #000;
     height: 100%;
     width: 100%;
-    /* prevents the cursor from interacting with it */
     pointer-events: none;
   }
   #hero .cs-container {
@@ -55,16 +49,13 @@
     margin: auto;
     max-width: 80em;
     width: 100%;
-    /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
-    /* 144px - 280px - leaving extra space for the navigation */
-    /* changes on tablet */
+    /* Padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
     padding: clamp(9em, 25.95vw, 17.5em) 0;
   }
   #hero .cs-container:before {
     position: absolute;
     top: 0;
     left: 0;
-    /* Left Line */
     content: "";
     opacity: 1;
     display: block;
@@ -79,9 +70,7 @@
     justify-content: center;
     align-items: flex-start;
     margin: auto;
-    /* 60px - 220px */
     margin-bottom: clamp(3.75em, 15.5vw, 13.75em);
-    /* 464px - 562px */
     max-width: clamp(29em, 60vw, 35.125em);
     width: 80vw;
     box-sizing: border-box;
@@ -97,9 +86,7 @@
     text-align: center;
   }
   #hero .cs-text {
-    /* 32px - 40px */
     margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
-    /* 40px - 48px */
     margin-bottom: clamp(2.5rem, 4vw, 3rem);
     color: var(--bodyTextColorWhite);
     text-align: center;
@@ -118,14 +105,12 @@
     border: 1px solid var(--bodyTextColorWhite);
     margin: 0 0.5rem;
     background-color: transparent;
-    /* 46px - 56px */
     height: clamp(2.875em, 5.5vw, 3.5em);
     width: 11.25rem;
     box-sizing: border-box;
     padding: 0;
     text-decoration: none;
     font-size: 1rem;
-    /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
     font-weight: 700;
     color: #fff;
@@ -137,14 +122,12 @@
   #hero .cs-button-transparent:before {
     z-index: -1;
     position: absolute;
-    /* so it sits on top of the border */
     top: -1px;
     bottom: -1px;
     left: -1px;
     right: -1px;
     content: "";
     opacity: 1;
-    /* this is what creates the grow affect on hover */
     transform: scaleX(0);
     display: block;
     background: #000;
@@ -158,7 +141,6 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #hero {
-    /* 32px - 40px */
     padding: 0 clamp(2em, 5vw, 2.5em);
   }
   #hero .cs-container {
@@ -168,7 +150,6 @@
     position: absolute;
     top: 0;
     right: 0;
-    /* Right Line */
     content: "";
     opacity: 1;
     display: block;
@@ -189,7 +170,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* creates parallax effect on background image */
     background-attachment: fixed;
   }
 }

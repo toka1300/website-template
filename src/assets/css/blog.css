@@ -1,4 +1,3 @@
-/* PAGE-SPECIFIC STYLES FOR THE BLOG AND ARTICLE PAGES */
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
@@ -17,12 +16,10 @@
     margin: auto;
     background-color: var(--headerColor);
     min-width: 9.375rem;
-    /* prevents padding from adding to the width */
     box-sizing: border-box;
     padding: 0 1.5rem;
     text-decoration: none;
     font-size: 1rem;
-    /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
     font-weight: 700;
     color: #fff;
@@ -95,7 +92,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    /* color overlay */
     content: "";
     opacity: 0.6;
     display: block;
@@ -308,12 +304,10 @@
     margin: auto;
     background-color: var(--headerColor);
     min-width: 9.375rem;
-    /* prevents padding from adding to the width */
     box-sizing: border-box;
     padding: 0 1.5rem;
     text-decoration: none;
     font-size: 1rem;
-    /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
     font-weight: 700;
     color: #fff;
@@ -633,7 +627,6 @@
 @media only screen and (min-width: 0rem) {
   #cs-footer {
     background-color: #1a1a1a;
-    /* 60px - 100px top and bottom */
     padding: clamp(3.75em, 7.82vw, 6.25em) 1em;
     font-family: "Roboto", "Arial", sans-serif;
   }
@@ -649,10 +642,8 @@
   }
   #cs-footer .cs-logo {
     display: block;
-    /* 28px - 44px */
     margin-bottom: clamp(1.75em, 4.17vw, 2.75em);
     height: auto;
-    /* 210px - 240px */
     width: clamp(13.125em, 8vw, 15em);
   }
   #cs-footer .cs-logo-img {
@@ -662,13 +653,11 @@
   #cs-footer .cs-text {
     margin: 0;
     margin-bottom: 2.5rem;
-    /* changes to 521px at desktop */
     max-width: 21.5rem;
     color: var(--bodyTextColorWhite);
   }
   #cs-footer .cs-nav {
     margin: 0;
-    /* 32px - 40px */
     margin-bottom: clamp(2em, 5.3vw, 2.5em);
     padding: 0;
     padding-left: 1em;
@@ -700,11 +689,8 @@
     position: absolute;
     bottom: -0.125rem;
     left: 0;
-    /* underline */
     content: "";
     opacity: 1;
-    display: block;
-    /* current color of the parent */
     background: currentColor;
     height: 0.125rem;
     width: 0%;
@@ -762,7 +748,6 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    /* 48px - 60px */
     column-gap: clamp(3em, 5.9vw, 3.75em);
   }
 }
@@ -772,7 +757,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    /* 20px - 60px */
     margin-bottom: clamp(1.25em, 4vw, 3.75em);
   }
   #cs-footer .cs-logo {
@@ -795,7 +779,6 @@
   }
   #cs-footer .cs-social {
     position: relative;
-    /* reset these positions */
     bottom: auto;
     right: auto;
     flex-direction: row;

@@ -1,12 +1,8 @@
-/* CODESTITCH STYLES, RESET, HEADER/NAVIGATION AND FOOTER */
-
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
 
-/* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
-    // Website colors
     :root {
         --primary: #ffba19;
         --primaryLight: #ffd675;
@@ -16,17 +12,13 @@
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
 
-        /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-        /* 31px - 49px */
         --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
         --bodyFontSize: 1rem;
 
-        /* 60px - 100px top and bottom */
         --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     }
 
-    // Text styles - can be replaced using CodeStitch's "Content Flair" Stitches
     .cs-topper {
         display: block;
         margin-bottom: 0.25rem;
@@ -60,7 +52,6 @@
         text-align: inherit;
     }
 
-    // Button - can be replaced using CodeStitch's "Button" Stitches
     .cs-button-solid {
         z-index: 1;
         position: relative;
@@ -188,9 +179,7 @@
         left: 0;
         opacity: 0;
     }
-    // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
 
-    /* roboto-regular - latin */
     @font-face {
         font-style: normal;
         font-family: "Roboto";
@@ -199,7 +188,6 @@
         src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"),
             /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
-    /* roboto-700 - latin */
     @font-face {
         font-style: normal;
         font-family: "Roboto";
@@ -208,7 +196,6 @@
         src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"),
             /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
-    /* roboto-900 - latin */
     @font-face {
         font-style: normal;
         font-family: "Roboto";
@@ -219,7 +206,6 @@
     }
 }
 
-/* Reset Margins */
 @media only screen and (min-width: 1024px) {
     body,
     html {
@@ -228,7 +214,6 @@
     }
 }
 
-/* Scale full website with the viewport width */
 @media only screen and (min-width: 3000px) {
     body,
     html {
@@ -284,16 +269,12 @@
 
         .cs-moon {
             z-index: 2;
-            // Transition properties
             transition: transform 0.3s, opacity 0.3s;
-
-            // fill: yellow; --> uncomment to change the color of the moon if needed
         }
 
         .cs-sun {
             z-index: 1;
             opacity: 0;
-            // Transition property
             transform: translate(-50%, 100%);
             transition: transform 0.3s, opacity 0.3s;
         }
@@ -332,10 +313,8 @@
         position: fixed;
         background-color: #fff;
         width: 100%;
-        /* prevents padding from affecting height and width */
         box-sizing: border-box;
         padding: calc(12 / 16 * 1rem) calc(16 / 16 * 1rem);
-        /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
         font-family: "Roboto", "Arial", sans-serif;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
@@ -355,7 +334,6 @@
             height: 100%;
             max-width: calc(146 / 16 * 1rem);
             width: 40%;
-            /* prevents padding from affecting height and width */
             box-sizing: border-box;
             padding: 0;
 
@@ -364,7 +342,6 @@
                 width: 100%;
                 /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
                 object-fit: contain;
-                /* places the image to the left edge of the parent */
                 object-position: left;
             }
         }
@@ -402,9 +379,7 @@
 
         .cs-box {
             position: relative;
-            /* 14px - 16px */
             height: clamp(0.875rem, 1.5vw, 1rem);
-            /* 24px - 28px */
             width: clamp(1.5rem, 2vw, 1.75rem);
         }
 
@@ -470,14 +445,12 @@
             min-width: 40%;
             width: auto;
             overflow: scroll;
-            /* 28px - 40px */
             padding: calc(48 / 16 * 1rem) clamp(1.75rem, 3vw, 2.5rem) calc(32 / 16 * 1rem) calc(70 / 16 * 1rem);
             gap: calc(20 / 16 * 1rem);
         }
 
         .cs-li {
             opacity: 0;
-            /* transition from these values */
             transform: translateX(calc(-40 / 16 * 1rem));
             margin-right: 0;
             width: 100%;
@@ -519,7 +492,6 @@
             display: inline-block;
             margin: 0;
             text-decoration: none;
-            /* 16px - 24px */
             font-size: clamp(1rem, 2.5vw, 1.5rem);
             line-height: 1.2em;
             color: var(--headerColor);
@@ -592,7 +564,6 @@
             background-color: var(--dark);
 
             .cs-logo {
-                /* makes it white */
                 filter: grayscale(1) brightness(1000%);
             }
 
@@ -688,7 +659,6 @@
 
         .cs-li-link {
             &.cs-drop-link {
-                /* 14px - 16px */
                 font-size: clamp(0.875rem, 2vw, 1.25rem);
                 color: #fff;
             }
@@ -810,7 +780,6 @@
             &.cs-drop-link {
                 display: block;
                 width: 100%;
-                /* prevents padding from affecting height and width */
                 box-sizing: border-box;
                 padding: calc(12 / 16 * 1rem);
                 white-space: nowrap;
@@ -872,10 +841,8 @@
         position: fixed;
         background-color: #fff;
         width: 100%;
-        /* prevents padding from affecting height and width */
         box-sizing: border-box;
         padding: 0 calc(16 / 16 * 1rem);
-        /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
         font-family: "Roboto", "Arial", sans-serif;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
@@ -898,7 +865,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            /* margin-right auto pushes everything away from it to the right */
             margin: 0 auto 0 0;
             height: calc(65 / 16 * 1rem);
             max-width: calc(350 / 16 * 1rem);
@@ -908,7 +874,6 @@
             img {
                 height: 100%;
                 width: 100%;
-                /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
                 object-fit: contain;
             }
         }
@@ -920,14 +885,12 @@
             margin: 0;
             width: 100%;
             padding: 0;
-            /* 20px - 36px */
             gap: clamp(1.25rem, 2.6vw, 2.25rem);
         }
 
         .cs-li {
             padding: calc(32 / 16 * 1rem) 0;
             list-style: none;
-            /* prevent flexbox from squishing it */
             flex: none;
         }
 
@@ -936,7 +899,6 @@
             display: block;
             margin: 0;
             text-decoration: none;
-            /* 14px - 16px */
             font-size: clamp(0.875rem, 1vw, 1rem);
             line-height: 1.5em;
             color: var(--bodyTextColor);
@@ -950,7 +912,6 @@
                 position: absolute;
                 bottom: calc(0 / 16 * 1rem);
                 left: 0;
-                /* active state underline */
                 content: "";
                 opacity: 1;
                 display: block;
@@ -976,7 +937,6 @@
             background-color: var(--dark);
 
             .cs-logo {
-                /* makes it turn white */
                 filter: grayscale(1) brightness(1000%);
             }
 
