@@ -1,6 +1,6 @@
 // Imports
 const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
-const pluginMinifier = require("@sherby/eleventy-plugin-files-minifier");
+const pluginMinifier = require("@codestitchofficial/eleventy-plugin-minify");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
 const eleventyPluginSharpImages = require("@codestitchofficial/eleventy-plugin-sharp-images");
 
