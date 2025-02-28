@@ -6,7 +6,7 @@ module.exports = {
     "address": {
         "lineOne": "123 Fake Street",
         "city": "Ottawa",
-        "state": "ON",
+        "province": "ON",
         "postalCode": "K0A1X0",
         "country": "Canada",
         "mapLink": "https://maps.app.goo.gl/5y6iGEJqFwFWFt9i9"
